@@ -4,111 +4,108 @@
 
   .CodeMirror {
     // Background color of main window
-    background-color: #FFFFFF;
-    color: @base02;
+    background-color: @gray-00;
+    color: @gray-90;
   }
+
   .CodeMirror-scroll {
-    // Color of otherwise un-styled text
-    color: @base02;
   }
+
   .CodeMirror-gutters {
-    // Gutter to the left
-    background-color: #FFFFFF;
+    background-color: @gray-00;
   }
+
   .CodeMirror-linenumber {
-    // Line numbers in the gutter
-    color: @base03;
-    opacity: 0.6;
+    color: @gray-20;
   }
+
   .CodeMirror-selected {
-    // Highlighed text
-    background-color: @base05;
+    background-color: @gray-10;
   }
+
   .CodeMirror-focused .CodeMirror-selected {
-    // Highlighed text
-    background-color: @base04;
+    background-color: @gray-10;
   }
+
   .CodeMirror-cursor {
-    // The cursor
-    border-left: 1px solid @base00;
+    border-left: 1px solid @gray-30;
   }
+
   .CodeMirror-matchingbracket,
   .CodeMirror-matchingtag {
-    // When you click a tag/bracket and the matching one is highlighted
-    background: @base03 !important;
-    border-bottom: 1px solid @base08 !important;
+    background-color: @gray-20 !important;
+		color: @gray-90 !important;
   }
   .CodeMirror-foldgutter-open:after {
-    // Those little arrows in the gutter
-    color: @base03;
+    color: @gray-20;
   }
   .CodeMirror-foldgutter-folded:after {
-    // The arrows after you collapse code
-    color: @base03;
+    color: @gray-20;
   }
   .CodeMirror.over-gutter,
   .CodeMirror-activeline {
     .CodeMirror-foldgutter-open:after {
-      // Arrows when hovering on the gutter
-      color: @base03;
+    	color: @gray-20;
     }
   }
   .CodeMirror-foldmarker {
-    // The [...] marking collapsed code
-    border-color: @base03;
-    background-color: @base03;
-    color: @base02;
+    border-color: @gray-20;
+    background-color: @gray-20;
+    color: @gray-30;
   }
   .CodeMirror .CodeMirror-linewidget img.inline-widget {
-    background: rgba(0,0,0,0.05);
+    background: @gray-10;
   }
+
   .CodeMirror-searching {
-    // Ctrl + F results
-    background-color: @base0D;
-    // Selected result
+    background-color: @gray-20;
     &.searching-current-match {
-      background-color: @base0C;
+      background-color: @yellow-50;
     }
   }
+
+	.cm-searching {
+    background-color: @yellow-50;
+	}
 
   /* All 'dem swatches */
 
   .CodeMirror {
     .cm-atom,
     .cm-formatting-list.cm-variable-3 {
-      color: @base0C;
+      color: @orange-50;
     }
 
     .cm-keyword,
     .cm-formatting-list.cm-variable-2 {
-      color: @base0A;
+      color: @blue-50;
     }
 
     .cm-url,
     .cm-string,
     .cm-string-2,
     .cm-hr {
-      color: @base09;
+      color: @indigo-50;
     }
     .cm-number,
     .cm-attribute,
     .cm-plus {
-      color: @base0A;
+      color: @blue-50;
     }
     .cm-def,
     .cm-property {
-      color: @base0C;
+      color: @orange-50;
     }
     .cm-variable {
-      color: @base0A;
+      color: @blue-50;
     }
     .cm-operator,
     .cm-meta,
     .cm-bracket {
-      color: @base0E;
+      color: @green-50;
     }
     .cm-comment {
-      color: @base04;
+      color: @gray-30;
       font-style: italic;
     }
     .cm-error,
@@ -119,60 +116,59 @@
       opacity: 0.3;
     }
     .cm-header {
-      color: @base0A;
+      color: @gray-90;
     }
     .cm-link {
-      color: @base0E;
+      color: @green-50;
       text-underline-position: under;
     }
     .cm-rangeinfo {
-      color: @base0C;
+      color: @orange-50;
     }
     .cm-qualifier,
     .cm-builtin,
     .cm-tag {
-      color: @base08;
+      color: @indigo-50;
     }
     .cm-quote {
-      color: @base0F;
+      color: @violet-50;
       font-style: italic;
     }
     .cm-whitespace::before {
-      color: @base04;
+      color: @gray-10;
       opacity: 0.4;
     }
     .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
       opacity: 0.6;
     }
     .cm-strong {
-      color: @base0B;
+      color: @red-50;
     }
     .cm-em {
-      color: @base0C;
+      color: @orange-50;
     }
 
     // carriage return
     .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
-      color: @base00;
+      color: @gray-90;
       opacity: 0.4;
     }
 
     .cm-inline-code {
-      background: rgba(0, 0, 0, 0.02);
-      color: @base03;
+			background-color: fade(@gray-10, 60%);
+      color: @gray-40;
     }
 
     .gfm-codeblock-bg.CodeMirror-linebackground {
-      background: rgba(0, 0, 0, 0.01);
+      background: fade(@gray-10, 40%);
     }
 
     .cm-table-sep, .table-row.table-row-1 {
-      color: @base0E;
+      color: @green-50;
     }
   }
 
-  /* Active Line Highlight support */
   .CodeMirror-activeline-background, .CodeMirror-activeline-gutter {
-    background-color: fade(@base06, 70%) !important;
+    background-color: fade(@gray-10, 70%) !important;
   }
 }
