@@ -1,6 +1,6 @@
 {
-  "version": "0.0.0",
-  "name": "penman-light-syntax",
+  "version": "0.1.0",
+  "name": "penman-syntax",
   "description": "Penman light syntax theme",
   "theme": "syntax",
   "scripts": {
