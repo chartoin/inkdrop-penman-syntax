@@ -51,29 +51,34 @@
 }
 .editor .cm-searching {
   background-color: #FFD530;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 3px 3px #C6C8CF;
+  padding: 0px 2px 0px 2px;
 }
 .editor .CodeMirror .cm-atom,
 .editor .CodeMirror .cm-formatting-list.cm-variable-3 {
-  color: #F47933;
+  color: #9D5025;
 }
 .editor .CodeMirror .cm-keyword,
 .editor .CodeMirror .cm-formatting-list.cm-variable-2 {
-  color: #056AB5;
+  color: #A63055;
 }
-.editor .CodeMirror .cm-url,
+.editor .CodeMirror .cm-url.cm-string {
+  color: #126495;
+}
 .editor .CodeMirror .cm-string,
 .editor .CodeMirror .cm-string-2,
 .editor .CodeMirror .cm-hr {
-  color: #484F9F;
+  color: #056AB5;
 }
 .editor .CodeMirror .cm-number,
 .editor .CodeMirror .cm-attribute,
 .editor .CodeMirror .cm-plus {
-  color: #056AB5;
+  color: #CA9439;
 }
 .editor .CodeMirror .cm-def,
 .editor .CodeMirror .cm-property {
-  color: #F47933;
+  color: #9D5025;
 }
 .editor .CodeMirror .cm-variable {
   color: #056AB5;
@@ -81,7 +86,7 @@
 .editor .CodeMirror .cm-operator,
 .editor .CodeMirror .cm-meta,
 .editor .CodeMirror .cm-bracket {
-  color: #49B95C;
+  color: #146B60;
 }
 .editor .CodeMirror .cm-comment {
   color: #AAADB7;
@@ -89,7 +94,7 @@
 }
 .editor .CodeMirror .cm-error,
 .editor .CodeMirror .cm-minus {
-  color: #BF616A;
+  color: #A63055;
 }
 .editor .CodeMirror .cm-formatting-header {
   opacity: 0.3;
@@ -98,20 +103,25 @@
   color: #151518;
 }
 .editor .CodeMirror .cm-link {
-  color: #49B95C;
+  color: #146B60;
   text-underline-position: under;
 }
 .editor .CodeMirror .cm-rangeinfo {
-  color: #F47933;
+  color: #9D5025;
 }
 .editor .CodeMirror .cm-qualifier,
 .editor .CodeMirror .cm-builtin,
 .editor .CodeMirror .cm-tag {
-  color: #484F9F;
+  color: #263480;
+}
+.editor .CodeMirror .cm-hr {
+  color: #CA9439;
+}
+.editor .CodeMirror .cm-quote.cm-formatting-quote {
+  opacity: 0.3;
 }
 .editor .CodeMirror .cm-quote {
-  color: #7358A0;
-  font-style: italic;
+  opacity: 0.6;
 }
 .editor .CodeMirror .cm-whitespace::before {
   color: #E2E3E7;
@@ -123,10 +133,10 @@
   opacity: 0.6;
 }
 .editor .CodeMirror .cm-strong {
-  color: #CD3F5C;
+  color: #A63055;
 }
 .editor .CodeMirror .cm-em {
-  color: #F47933;
+  color: #A63055;
 }
 .editor .CodeMirror .CodeMirror-code > div > pre > span::after,
 .editor .CodeMirror .CodeMirror-line > span::after {
@@ -134,15 +144,21 @@
   opacity: 0.4;
 }
 .editor .CodeMirror .cm-inline-code {
-  background-color: rgba(226, 227, 231, 0.6);
-  color: #8F93A0;
+  color: #151518;
+  box-sizing: border-box;
+  border: 1px solid #E2E3E7;
+  padding: 0px 2px 0px 2px;
+}
+.editor .CodeMirror .cm-formatting.cm-inline-code {
+  border: none;
+  padding: 0px 0x 0px 0px;
 }
 .editor .CodeMirror .gfm-codeblock-bg.CodeMirror-linebackground {
   background: rgba(226, 227, 231, 0.4);
 }
 .editor .CodeMirror .cm-table-sep,
 .editor .CodeMirror .table-row.table-row-1 {
-  color: #49B95C;
+  color: #146B60;
 }
 .editor .CodeMirror-activeline-background,
 .editor .CodeMirror-activeline-gutter {

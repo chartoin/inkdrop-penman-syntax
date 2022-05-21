@@ -1,5 +1,26 @@
 @import "./colors";
 
+.raise() {
+	box-sizing: border-box;
+	box-shadow: 0px 0px 3px 3px @gray-20;
+	padding: 0px 2px 0px 2px;
+}
+
+.box() {
+	box-sizing: border-box;
+	border: 1px solid @gray-10;
+	padding: 0px 2px 0px 2px;
+}
+
+.unbox() {
+	border: none;
+	padding: 0px 0x 0px 0px;
+}
+
+.fadeText() {
+	opacity: 0.3;
+}
+
 .editor {
 
   .CodeMirror {
@@ -66,6 +87,7 @@
 
 	.cm-searching {
     background-color: @yellow-50;
+		.raise();
 	}
 
   /* All 'dem swatches */
@@ -73,28 +95,31 @@
   .CodeMirror {
     .cm-atom,
     .cm-formatting-list.cm-variable-3 {
-      color: @orange-50;
+      color: @orange-90;
     }
 
     .cm-keyword,
     .cm-formatting-list.cm-variable-2 {
-      color: @blue-50;
+      color: @red-90;
     }
 
-    .cm-url,
+		.cm-url.cm-string {
+			color: @blue-90;
+		}
+    
     .cm-string,
     .cm-string-2,
     .cm-hr {
-      color: @indigo-50;
+      color: @blue-50;
     }
     .cm-number,
     .cm-attribute,
     .cm-plus {
-      color: @blue-50;
+      color: @yellow-90;
     }
     .cm-def,
     .cm-property {
-      color: @orange-50;
+      color: @orange-90;
     }
     .cm-variable {
       color: @blue-50;
@@ -102,7 +127,7 @@
     .cm-operator,
     .cm-meta,
     .cm-bracket {
-      color: @green-50;
+      color: @green-90;
     }
     .cm-comment {
       color: @gray-30;
@@ -110,29 +135,36 @@
     }
     .cm-error,
     .cm-minus {
-      color: @base0B;
+      color: @red-90;
     }
     .cm-formatting-header {
-      opacity: 0.3;
+			.fadeText();
     }
     .cm-header {
       color: @gray-90;
     }
     .cm-link {
-      color: @green-50;
+      color: @green-90;
       text-underline-position: under;
     }
     .cm-rangeinfo {
-      color: @orange-50;
+      color: @orange-90;
     }
     .cm-qualifier,
     .cm-builtin,
     .cm-tag {
-      color: @indigo-50;
+      color: @indigo-90;
     }
+
+		.cm-hr {
+			color: @yellow-90;
+		}
+
+		.cm-quote.cm-formatting-quote {
+			.fadeText();
+		}
     .cm-quote {
-      color: @violet-50;
-      font-style: italic;
+			opacity: 0.6;
     }
     .cm-whitespace::before {
       color: @gray-10;
@@ -142,10 +174,10 @@
       opacity: 0.6;
     }
     .cm-strong {
-      color: @red-50;
+      color: @red-90;
     }
     .cm-em {
-      color: @orange-50;
+      color: @red-90;
     }
 
     // carriage return
@@ -155,16 +187,20 @@
     }
 
     .cm-inline-code {
-			background-color: fade(@gray-10, 60%);
-      color: @gray-40;
+      color: @gray-90;
+			.box();
     }
+
+		.cm-formatting.cm-inline-code {
+			.unbox();
+		}
 
     .gfm-codeblock-bg.CodeMirror-linebackground {
       background: fade(@gray-10, 40%);
     }
 
     .cm-table-sep, .table-row.table-row-1 {
-      color: @green-50;
+      color: @green-90;
     }
   }
 
