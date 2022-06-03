@@ -66,6 +66,13 @@
 .editor .CodeMirror .cm-url.cm-string {
   color: #0E5077;
 }
+.editor .CodeMirror .cm-url {
+  color: #0E5077;
+}
+.editor .CodeMirror .cm-url:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
 .editor .CodeMirror .cm-string,
 .editor .CodeMirror .cm-string-2,
 .editor .CodeMirror .cm-hr {
@@ -104,7 +111,7 @@
 }
 .editor .CodeMirror .cm-link {
   color: #146B60;
-  text-underline-position: under;
+  text-decoration: none;
 }
 .editor .CodeMirror .cm-rangeinfo {
   color: #7A3C19;
@@ -129,14 +136,19 @@
 }
 .editor .CodeMirror .cm-formatting-quote,
 .editor .CodeMirror .cm-formatting-strong,
-.editor .CodeMirror .cm-formatting-em {
-  opacity: 0.6;
+.editor .CodeMirror .cm-formatting-em,
+.editor .CodeMirror .cm-formatting-strikethrough {
+  opacity: 0.3;
 }
 .editor .CodeMirror .cm-strong {
   color: #8F2C40;
 }
 .editor .CodeMirror .cm-em {
   color: #8F2C40;
+}
+.editor .CodeMirror .cm-strikethrough {
+  color: #2F323A;
+  text-decoration-color: #AAADBD;
 }
 .editor .CodeMirror .CodeMirror-code > div > pre > span::after,
 .editor .CodeMirror .CodeMirror-line > span::after {

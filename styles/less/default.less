@@ -85,6 +85,10 @@
     }
   }
 
+	// pre.CodeMirror-line.header-1, pre.CodeMirror-line.header-2 {
+	// 	border-bottom: 1px solid @yellow-90;
+	// }
+
 	.cm-searching {
     background-color: @yellow-50;
 		.raise();
@@ -105,6 +109,15 @@
 
 		.cm-url.cm-string {
 			color: @blue-90;
+		}
+
+		.cm-url {
+			color: @blue-90;
+		}
+
+		.cm-url:hover {
+			text-decoration: underline;
+      text-underline-position: under;
 		}
     
     .cm-string,
@@ -145,7 +158,7 @@
     }
     .cm-link {
       color: @green-90;
-      text-underline-position: under;
+			text-decoration: none;
     }
     .cm-rangeinfo {
       color: @orange-90;
@@ -170,8 +183,8 @@
       color: @gray-10;
       opacity: 0.4;
     }
-    .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em {
-      opacity: 0.6;
+    .cm-formatting-quote, .cm-formatting-strong, .cm-formatting-em, .cm-formatting-strikethrough {
+      opacity: 0.3;
     }
     .cm-strong {
       color: @red-90;
@@ -179,6 +192,11 @@
     .cm-em {
       color: @red-90;
     }
+
+		.cm-strikethrough {
+			color: @gray-70;
+			text-decoration-color: @gray-30;
+		}
 
     // carriage return
     .CodeMirror-code > div > pre > span::after, .CodeMirror-line > span::after {
