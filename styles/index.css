@@ -22,8 +22,10 @@
 }
 .editor .CodeMirror-matchingbracket,
 .editor .CodeMirror-matchingtag {
-  background-color: #C6C8CF !important;
+  background-color: #E2E3EC !important;
   color: #151518 !important;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 1px 1px #C6C8CF;
 }
 .editor .CodeMirror-foldgutter-open:after {
   color: #C6C8CF;
@@ -52,7 +54,7 @@
 .editor .cm-searching {
   background-color: #FFD530;
   box-sizing: border-box;
-  box-shadow: 0px 0px 3px 3px #C6C8CF;
+  box-shadow: 0px 0px 2px 2px #C6C8CF;
   padding: 0px 2px 0px 2px;
 }
 .editor .CodeMirror .cm-atom,

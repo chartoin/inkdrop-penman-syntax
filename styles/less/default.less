@@ -2,8 +2,13 @@
 
 .raise() {
 	box-sizing: border-box;
-	box-shadow: 0px 0px 3px 3px @gray-20;
+	box-shadow: 0px 0px 2px 2px @gray-20;
 	padding: 0px 2px 0px 2px;
+}
+
+.raiseNopad() {
+	box-sizing: border-box;
+	box-shadow: 0px 0px 1px 1px @gray-20;
 }
 
 .box() {
@@ -54,8 +59,9 @@
 
   .CodeMirror-matchingbracket,
   .CodeMirror-matchingtag {
-    background-color: @gray-20 !important;
+    background-color: @gray-10 !important;
 		color: @gray-90 !important;
+		.raiseNopad();
   }
   .CodeMirror-foldgutter-open:after {
     color: @gray-20;
